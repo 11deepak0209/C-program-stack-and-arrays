@@ -7,19 +7,19 @@ int search(int a[],int size, int element )
     while (start<=last)
     {
         
-    
+    //logic to binary search
      
          if (a[mid]==element)
          {
              return mid;
          }
-         if (a[mid]<element)
+         if (element<a[mid])
          {
-             start = mid+1;
+             start = mid-1;
          }
          else
          {
-             start = mid-1;
+             start = mid+1;
          }
                       
   
@@ -29,7 +29,7 @@ int search(int a[],int size, int element )
 };
 int main()
 {   int temp = 0,i;
-    int a[ ]= {11,12,13,14,22,209 };
+    int a[ ]= {11,12,13,14,22,209 }; //Array must be sorted
     int size= sizeof(a)/sizeof(int);     
     int element, start=0 , last= 5  ;
      printf("array is \t");
