@@ -6,20 +6,20 @@ int search(int a[],int size, int element )
     int mid = (start+last)/2;
     while (start<=last)
     {
-        
+        //logic to binary search
     
      
          if (a[mid]==element)
          {
              return mid;
          }
-         if (a[mid]<element)
+         if (elment<a[mid])
          {
-             start = mid+1;
+             start = mid-1;
          }
          else
          {
-             start = mid-1;
+             start = mid+1;
          }
                       
   
