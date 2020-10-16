@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include <conio.h>
 int a[100],siz,pos,ch;
 void size();
@@ -13,7 +12,7 @@ int main()
     
     while (1)// 1 mean true infinite loop
     {//loop parenthesis
-     printf("\n\t Choose Option by pressing number\n\t1: Inserting element in Array\n\t2: Display Element of Array\n\t3: Delete element from array by postion\n\t4:Exit the programme\n");
+     printf("\n\t Choose Option by following number\n\t1: Inserting element in Array\n\t2: Display Element of Array\n\t3: Delete element from array by postion\n\t4:Exit the programme\n");
      scanf("%d",&ch);      
      switch (ch)
      {
@@ -58,7 +57,7 @@ int main()
 
 void size()
 {
-    printf("\tENter the size of array\n");
+    printf("\tGive size of ARRAY Max** Size  is 100 \n");
      scanf("%d",&siz);
 }
 
@@ -75,7 +74,7 @@ void display()
 {
    for (int i = 0; i <siz; i++)
    {
-       printf("\t Index:Pos %d -> %d\n",i,a[i]);
+       printf("\t Index:Pos %d - %d\n",i,a[i]);
    }
    
 
@@ -93,10 +92,10 @@ void position()
     {
         for (int i = pos-1; i <=siz-1; i++)
         {
-            a[i]=a[i+1];
+            a[i]=a[i+1]; // shifting array by indexing
         }
     }
-  siz--;
-     printf("\t%d no. elment deleted is %d\n",pos,a[pos-1]);   
+  siz--; // decrease size after delted element
+     printf("\t%d no. elment deleted is %d \n",pos,a[pos-1]);    //showing elment delted
  
 }
