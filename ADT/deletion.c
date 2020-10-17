@@ -2,7 +2,8 @@
 #include <string.h>
 #include <conio.h>
 int main()
-{
+{   
+    // let us take the input manually by the user
     int a[10]= {12, 7 , 209 ,27};
       int size=4, index;
       printf("Index : \t");
@@ -17,7 +18,7 @@ int main()
       }
       
       printf("\nEnter the index to delete element\n");
-       scanf("%d",&index);
+       scanf("%d",&index); // enter the index to enter the index
     
       
       
